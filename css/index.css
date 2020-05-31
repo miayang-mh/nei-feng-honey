@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----reset------ */
+/* 會用到的顏色
+蜂蜜黃
+#fdd133;
+柿實
+#E45D00
+*/
+
+
+a{
+    text-decoration: none;
+}
+.font20{
+    font-size: 20px;
+}
+
+.font-w6{font-weight: 600;}
+/* ----------- */
+
+.wrap{
+    font-family: cursive;
+    color: #555;
+    /* width: 1024px; */
+}
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    background: #eadbbb;
+}
+.header-logorow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-logo{
+    padding: 0px 20px;
+}
+nav>ul{
+    display: flex;
+}
+nav ul li a{
+    color: #965738 ;
+    font-weight: 600;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: #E45D00;
+}
+.menu-product-open{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background: #eadbbbea;
+    color: #ffffff;
+    margin: 15px 0px;
+}
+.menu-product-open li {
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+.header-toolrow{
+    background: #f1ece1;
+}
+.header-tool{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-tool li {
+    margin: 10px 5px ;
+}
+.header-tool li a{
+    padding: 10px 5px;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #965738 ;
+}
+
+.header-tool li a:hover{
+    color: #E45D00;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.swiper-wrapper{
+    width: 500px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+.swiper-slide img{
+    height: 300px;
+}
+.subjectrow{
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+h1,h3,h4,h6{
+    font-size: 38px;
+    color: #965738;
+}
+.subjectrow p{
+    margin: 10px;
+}
+
+.subjectrow-main{
+    display: flex; 
+    justify-content: space-around;
+}
+.subjectrow-main img:hover{
+    box-shadow: 1px 1px 20px #fdd133;
+}
+
+.subjectrow-main figure{
+    width: 205px;
+    color: #999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+.subjectrow-main figcaption{
+    text-align: center;
+}
+
+.subjectrow-main figcaption:hover{
+    color: #E45D00;
+}/*想要滑過去時,與圖片hover能連動,目前來不知道怎麼做,先設這效果 */
+
+.subjectrow-main img{
+    width: 205px;
+    border-radius: 99em;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.527);
+}
+h2{
+    margin: 10px;
+    font-size: 20px;
+    color: #e72c2e;
+    font-weight: 600;
+}
+
+.subjectrow-explanation{
+background: #2e32330a;
+padding: 30px;
+}
+.subjectrow-explanation p{
+    margin: 20px 0px;
+    line-height: 1.5;
+}
+.subjectrow-explanation a{
+    color: #555555;
+}
+.subjectrow-explanation a:hover{
+    color: #E45D00;
+    font-weight: 600;
+}
+
+.subjectrow-title{
+    margin: 30px 0px 0px 0px;
+}
+
+h5{
+    margin: 10px;
+    font-size: 20px;
+    color: #5c485f;
+    font-weight: 600;
+}
+
+.subjectrow-commodity{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subjectrow-commodity img{
+    width: 200px;
+    box-shadow: 1px 1px 10px rgba(85, 85, 85, 0.527);
+    /* 暫時用固定寬度 */
+}
+.subjectrow-commodity-figure{
+    margin: 20px;
+}
+.subjectrow-commodity img:hover{
+    box-shadow: 1px 1px 20px #fdd133;
+    /* 無法和H5一起使用滑→陰影效果,會變成分開 */
+}
+
+footer{
+    background: #2e32330a;
+    padding: 20px;
+    margin: 30px 0px ;
+    color: #555;
+}
+
+footer>p{
+    margin: 10px 0px;
+}
+
+address{
+    padding: 10px 0px;
+}
+
+address>p{
+    line-height: 1.5;
+}
+footer a{
+    position: fixed;
+    right: 120px;
+    /* 想要能置動置中 */
+    bottom: 30px;
+    color: #fdd133;
+    border: 1px solid #fdd133 ;
+    width: 45px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+footer a:active{
+    color: #E45D00;
+    border: 1px solid #E45D00 ;
+}

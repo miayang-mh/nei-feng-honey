@@ -1,0 +1,28 @@
+官網
+https://fontawesome.com/
+
+在<head>寫入
+ <script src="https://kit.fontawesome.com/5ac491aa3a.js" crossorigin="anonymous"></script>
+
+尺寸大小寫法
+https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons  
+
+
+
+
+這專案用到的
+
+https://fontawesome.com/icons/search?style=solid
+<i class="fas fa-search"></i>
+
+https://fontawesome.com/icons/user?style=solid
+<i class="fas fa-user"></i>
+
+https://fontawesome.com/icons/shopping-cart?style=solid
+<i class="fas fa-shopping-cart"></i>
+
+https://fontawesome.com/icons/angle-up?style=solid
+<i class="fas fa-angle-up"></i>
+
+https://fontawesome.com/icons/angle-down?style=solid
+<i class="fas fa-angle-down"></i>
